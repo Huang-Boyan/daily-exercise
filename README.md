@@ -1,11 +1,6 @@
 1. 成功建立两个公开仓库：daily-exercise（日常练习/笔记）与 pytorch-playground（深度学习实验），并已提交至少 3 次有效 commit。
-2. Numpy 夯实（从“会敲”到“会用”）
-
-目标：完成一套数组操作与广播机制的小练习（切片/索引/广播/向量化）。
-
-交付：一份 numpy_practice.ipynb，最后附 10 行以内的“易错点小结”。
-
-
+2. 已完成一套数组操作与广播机制的小练习（切片/索引/广播/向量化），并交付了一份 numpy_practice.ipynb
+   http://localhost:8888/lab/tree/numpy_practice.ipynb
 3. PyTorch 基础网络实战
 
 目标：独立完成一个小型任务（如 MNIST 的两层 MLP 或 CIFAR10 的简单 CNN）。
