@@ -1,0 +1,22 @@
+from pymysql import Connection
+
+conn = Connection(
+    host="localhost",
+    port=3306,
+    user="root",
+    password="hby070727",
+    autocommit=True
+)
+
+print(conn.get_server_info()) #确认连接
+cursor = conn.cursor() #创建游标
+conn.select_db("test") #选择对象
+cursor.execute("create table test_pymysql(id int)") #创建表
+
+cursor.execute("select * from test_pymysql")
+results = cursor.fetchall()
+print(results) #查询
+
+cursor.execute("insert into test_pymysql values(111)")
+
+conn.close()
